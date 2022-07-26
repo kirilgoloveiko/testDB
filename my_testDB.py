@@ -2,10 +2,10 @@ import pyodbc
 import pandas as pd
 
 connect = pyodbc.connect('DRIVER={SQL Server};'
-                         'SERVER=103.24.99.76;'
+                         'SERVER=sever;'
                          'DATABASE=Portal_data;'
                          'UID=testUser;'
-                         'PWD=Abcd.1234;')
+                         'PWD=password;')
 
 cursor = connect.cursor()
 
